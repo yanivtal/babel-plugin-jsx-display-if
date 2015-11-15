@@ -9,13 +9,13 @@ function jsxIfTransform(_ref) {
     var Plugin = _ref.Plugin;
     var t = _ref.types;
 
-    return new Plugin('jsx-display-if', {
+    return new Plugin('jsx-if', {
         visitor: {
             JSXElement: function transform(node, parent) {
                 var ifAttributes = node.openingElement.attributes.filter(function (_ref2) {
                     var type = _ref2.type;
                     var name = _ref2.name;
-                    return type === 'JSXAttribute' && name.name === 'display-if';
+                    return type === 'JSXAttribute' && name.name === 'if';
                 });
                 if (!ifAttributes.length) {
                     return;
