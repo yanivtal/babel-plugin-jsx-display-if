@@ -4,7 +4,7 @@ export default function JsxDisplayIf({types: t}) {
             JSXElement: function transform(path) {
                 let { node } = path;
                 let ifAttributes = node.openingElement.attributes
-                    .filter(({type, name}) => type === 'JSXAttribute' && name.name === 'display-if');
+                    .filter(({type, name}) => type === 'JSXAttribute' && name.name === 'if');
                 if (!ifAttributes.length) {
                     return;
                 }
