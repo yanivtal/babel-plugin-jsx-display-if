@@ -23,7 +23,7 @@
   "license": "MIT",
   "repository": "craftsy/babel-plugin-jsx-display-if",
   "dependencies": {
-    "babel-core": "^5.8.25"
+    "babel-core": "^6.2.0"
   },
   "devDependencies": {
     "babel": "^5.8.23",
